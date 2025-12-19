@@ -31,8 +31,7 @@ const Footer = () => {
         <div>
           <p className="text-lg font-semibold mb-4">PONTE EN CONTACTO</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+57 312 345 6789</li>
-            <li>customersupport@appointy.in</li>
+            <li>Mocoa Putumayo, Barrio San Agustin Cra 26 No. 13-02</li>
           </ul>
         </div>
       </div>

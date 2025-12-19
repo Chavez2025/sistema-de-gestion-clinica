@@ -22,9 +22,14 @@ const Doctors = () => {
     })
 
     if (speciality) {
-      const filtered = doctors.filter(doc => doc.speciality === speciality)
-      console.log(`Found ${filtered.length} matching doctors`)
-      setFilterDoc(filtered)
+      if (speciality === 'Médico general') {
+        const juanPerez = doctors.filter(doc => doc.name === 'Juan Perez' && doc.speciality === 'Médico general');
+        setFilterDoc(juanPerez);
+      } else {
+        const filtered = doctors.filter(doc => doc.speciality === speciality);
+        console.log(`Found ${filtered.length} matching doctors`);
+        setFilterDoc(filtered);
+      }
     } else {
       setFilterDoc(doctors)
     }
